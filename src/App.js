@@ -4,9 +4,13 @@ import Home from "./pages/Home";
 
 function App() {
   return (
-    <div className="App">
+    <div className="container">
+       <div class="navbar navbar-dark bg-primary">
+       <Link to="/" className="navbar-brand">Home</Link>
+      </div>
+     <div className="col-md-12">
      <h1>React Appollo GraphQL</h1>
-     <Link to="/">Home</Link>
+     <hr/>
      <Routes>
       <Route
          path="/"
@@ -17,6 +21,7 @@ function App() {
          element={<Details />}
       />
      </Routes>
+     </div>
     </div>
   );
 }
